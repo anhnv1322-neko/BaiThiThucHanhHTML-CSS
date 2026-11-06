@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Musical - Sign In</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="login-page">
     <header>
         <nav class="main_logo">
             <img src="img/music.svg" alt="">
@@ -17,21 +18,35 @@
             <div class="menu">Albums</div>
         </nav>
         <nav class="login">
-            <button class="signin">Sign in</button>
-            <button class="signup">Sign up</button>
+            <button class="signin" type="button">Sign In</button>
+            <button class="signup" type="button">Sign Up</button>
         </nav>
     </header>
-    <form action="">
-        Email
-        <input type="email">
-        Password
-        <input type="password">
-        <span>
-            <input type="checkbox">Remember Me
-            <span><a href="#">Forgot password?</a></span>
-            <a href="loginPage.html"><button>LOGIN</button></a>
-            <span>Not a member ? <a href="#">Register</a></span>
-        <span>
-    </form>
+
+    <main>
+        <form action="#" method="post">
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="admin@gmail.com" autocomplete="username">
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password">
+            </div>
+
+            <div class="login-options">
+                <label class="remember-me" for="remember">
+                    <input id="remember" name="remember" type="checkbox" checked>
+                    <span>Remember Me</span>
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button class="login-submit" type="submit">LOGIN</button>
+
+            <p class="register-line">Not a member ? <a href="#">Register</a></p>
+        </form>
+    </main>
 </body>
 </html>

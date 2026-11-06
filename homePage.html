@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Musical - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home-page">
     <header>
         <nav class="main_logo">
             <img src="img/music.svg" alt="">
@@ -17,12 +18,13 @@
             <div class="menu">Albums</div>
         </nav>
         <nav class="login">
-            <a href="loginPage.html"><button class="signin">Sign in</button></a>
-            <button class="signup">Sign up</button>
+            <a href="loginPage.html"><button class="signin" type="button">Sign In</button></a>
+            <button class="signup" type="button">Sign Up</button>
         </nav>
     </header>
-    <div class="container">
-        <div class="music_card">
+
+    <main class="container">
+        <section class="music_card" aria-label="Now playing">
             <audio controls>
                 <source src="music/sound.mp3" type="audio/mpeg">
                 Trình duyệt của bạn không hỗ trợ thẻ audio.
@@ -31,23 +33,102 @@
                 <img src="img/music.svg" alt="">
                 <span>Take me to your heart</span>
             </span>
-            <span>
-                <br>Take me to your heart, take me to your soul<br>
+            <span class="lyrics">
+                Take me to your heart, take me to your soul<br>
                 Give me your hand before I'm old<br>
-                Show me what the love is, haven't got a clue<br>
+                Show me what love is, haven't got a clue<br>
                 Show me that wonders can be true
             </span>
-        </div>
-        <div class="music_rec">
-            <div class="rec_card">
-                <img src="img/singer.jfif" width="150" height="150" alt="">
+        </section>
+
+        <section class="music_rec" aria-label="Recommended songs">
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
                 <span>Take me to your heart</span>
                 <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
-            </div>
-        </div>
-    </div>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="My Love album cover">
+                <span>My love</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Cry on My Shoulder album cover">
+                <span>Cry on my shoulder</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Breathless album cover">
+                <span>Breathless</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Until You album cover">
+                <span>Until You</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+            <article class="rec_card">
+                <img src="img/singer.jfif" alt="Take Me to Your Heart album cover">
+                <span>Take me to your heart</span>
+                <span><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt=""></span>
+            </article>
+        </section>
+    </main>
+
     <footer>
-        <img src="img/music.svg" alt="">Musical Entertainment<img src="img/music.svg" alt="">
+        <img src="img/music.svg" alt="">
+        <span>Musical Entertainment</span>
+        <img src="img/music.svg" alt="">
     </footer>
 </body>
 </html>

@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    color: #171717;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+    background: #fff;
+}
+
+.main_logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 112px;
+    height: 100%;
+    padding: 0 12px;
+    background: #fbfbfb;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main_logo img {
+    display: block;
+    width: 17px;
+    height: 17px;
+}
+
+.head-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(20px, 4vw, 42px);
+    flex: 1;
+    color: #777b91;
+    font-size: 9px;
+}
+
+.menu {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 13px;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.login button {
+    height: 31px;
+    padding: 0 14px;
+    border: 1px solid #4058e9;
+    border-radius: 5px;
+    background: #fff;
+    color: #3449c7;
+    font: 9px Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.login .signin {
+    background: #3e50ed;
+    color: #fff;
+}
+
+/* ==============================
+   Home page
+   ============================== */
+.home-page header {
+    width: calc(100% - 50px);
+    height: 44px;
+    margin: 6px 0 0 15px;
+}
+
+.home-page .main_logo {
+    min-width: 98px;
+    gap: 2px;
+    padding-left: 15px;
+}
+
+.home-page .head-menu {
+    transform: translateX(-10px);
+}
+
+.home-page .login {
+    padding-right: 15px;
+}
+
+.home-page .login button {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.home-page .container {
+    width: 85.3%;
+    margin: 28px 0 9px 6.2%;
+}
+
+.music_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px auto;
+    align-items: center;
+    column-gap: 4px;
+    row-gap: 8px;
+    min-height: 108px;
+    padding: 10px 20px 11px;
+    border: 1px solid #4268ff;
+    border-radius: 9px;
+}
+
+.music_card audio {
+    grid-column: 1 / -1;
+    display: block;
+    width: 100%;
+    height: 31px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.song img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+}
+
+.music_card > span:last-child {
+    align-self: center;
+    font-size: 9px;
+    line-height: 12px;
+}
+
+.music_rec {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px 22px;
+    width: calc(100% + 2px);
+    margin: 28px 0 0 -2px;
+}
+
+.rec_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    height: 119px;
+    padding: 4px 6px 5px;
+    overflow: hidden;
+    border: 1px solid #f0dddd;
+    border-radius: 9px;
+    background: #fff;
+    font-size: 9px;
+}
+
+.rec_card > img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    max-width: 100%;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.rec_card > span:nth-child(2) {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 12px;
+}
+
+.rec_card > span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 2px;
+}
+
+.rec_card > span:last-child img {
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+
+.home-page footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 87%;
+    min-height: 30px;
+    margin: 0 auto;
+    padding: 4px 7px;
+    background: #fcfafb;
+    color: #1647e9;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.home-page footer img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.login-page header {
+    width: calc(100% - 35px);
+    height: 50px;
+    margin: 3px 0 0 21px;
+}
+
+.login-page .main_logo {
+    min-width: 110px;
+    padding-left: 17px;
+}
+
+.login-page .head-menu {
+    font-size: 10px;
+    transform: translateX(-7px);
+}
+
+.login-page .login {
+    gap: 9px;
+    padding-right: 14px;
+    transform: translateX(1px);
+}
+
+.login-page .login button {
+    height: 35px;
+    padding: 0 14px;
+    font-size: 10px;
+}
+
+.login-page form {
+    width: min(313px, calc(100% - 40px));
+    margin: 54px auto 0;
+    transform: translateX(6px);
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.form-field input {
+    display: block;
+    width: 100%;
+    height: 26px;
+    padding: 4px 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    outline: none;
+    background: #fff;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+
+.form-field input:focus {
+    border-color: #4b70e8;
+    box-shadow: 0 0 0 2px rgb(75 112 232 / 12%);
+}
+
+.form-field input::placeholder {
+    color: #d7baba;
+    opacity: 1;
+}
+
+.form-field + .form-field {
+    margin-top: 9px;
+}
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px 0 5px;
+    margin-top: 17px;
+    color: #777;
+    font-size: 10px;
+}
+
+.remember-me {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-me input {
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    accent-color: #4b70e8;
+}
+
+.login-options a,
+.register-line a {
+    color: #244bc5;
+    text-decoration: none;
+}
+
+.login-submit {
+    display: block;
+    height: 39px;
+    width: calc(100% - 2px);
+    margin: 24px 0 0 2px;
+    border: 0;
+    border-radius: 10px;
+    background: #4b70e8;
+    color: #fff;
+    font: 20px "Times New Roman", Times, serif;
+    cursor: pointer;
+}
+
+.register-line {
+    margin-top: 13px;
+    text-align: right;
+    font-size: 11px;
+}
+
+@media (max-width: 520px) {
+    .home-page header {
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    .main_logo {
+        min-width: auto;
+        padding: 0 7px;
+        font-size: 12px;
+    }
+
+    .head-menu {
+        gap: 12px;
+        font-size: 8px;
+    }
+
+    .login {
+        gap: 5px;
+        padding-right: 6px;
+    }
+
+    .login button {
+        padding: 0 8px;
+    }
+
+    .home-page .container {
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    .music_card {
+        grid-template-columns: 1fr;
+        row-gap: 7px;
+        padding: 9px 12px;
+    }
+
+    .music_card > span:last-child {
+        padding-left: 28px;
+    }
+
+    .music_rec {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .rec_card > img {
+        width: min(75px, 100%);
+    }
+
+    .login-page header {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+
+    .login-page .main_logo {
+        padding-left: 8px;
+    }
+
+    .login-page .head-menu {
+        gap: 10px;
+        font-size: 8px;
+        transform: none;
+    }
+
+    .login-page .login {
+        padding-right: 6px;
+        transform: none;
+    }
+
+    .login-page .login button {
+        height: 31px;
+        padding: 0 8px;
+        font-size: 9px;
+    }
+}
